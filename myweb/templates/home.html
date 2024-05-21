@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+      {% block title %}
+
+      {% for a in auth %}:
+       <h1>{{a.full_name}}</h1><br><br>
+       <h2>{{a.bio}}</h2>
+
+      {% endfor %}
+
+    {% endblock %}
+
+</body>
+</html>
+
+
